@@ -75,7 +75,7 @@ The public annotation filename is `anchors.pt` for both datasets; the seed recor
 
 ## 3. Evaluate the included checkpoints
 
-The two checkpoint files are already in `checkpoints/`; no separate weight download is needed.
+Pretrained checkpoint can be downloaded from: [https://github.com/yyy0218/spareSBS/releases/tag/checkpoint](https://github.com/yyy0218/spareSBS/releases/tag/checkpoint), please scroll down to the Assets section to get the weight file.
 
 | Dataset | Labels | Full-resolution mIoU | Checkpoint |
 |---|---:|---:|---|
