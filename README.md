@@ -77,10 +77,10 @@ The public annotation filename is `anchors.pt` for both datasets; the seed recor
 
 The two checkpoint files are already in `checkpoints/`; no separate weight download is needed.
 
-| Dataset | Labels | Selected epoch | Full-resolution mIoU | Checkpoint |
-|---|---:|---:|---:|---|
-| S3DIS Area 5 | 0.1% | 96 | 69.90% | `checkpoints/s3dis_0p1.pt` |
-| ScanNetV2 validation | 0.1% | 98 | 73.00% | `checkpoints/scannetv2_0p1.pt` |
+| Dataset | Labels | Full-resolution mIoU | Checkpoint |
+|---|---:|---:|---|
+| S3DIS Area 5 | 0.1% | 69.90% | `checkpoints/s3dis_0p1.pt` |
+| ScanNetV2 validation | 0.1% | 73.00% | `checkpoints/scannetv2_0p1.pt` |
 
 ```bash
 python scripts/evaluate.py --config configs/s3dis/sparse_0p1.yaml \
