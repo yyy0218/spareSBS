@@ -121,4 +121,4 @@ Use a new output directory for each fresh training run. To continue an interrupt
 
 Check the extracted files using `sha256sum -c SHA256SUMS`. If host RAM is limited, lower `training.workers` in the YAML. Smaller GPUs may require lower batch size, which changes the training recipe.
 
-Third-party notices are retained in the single `NOTICE` file (DeLA-v2, Pointcept and timm; nanoflann retains its header notice). These notices do not assign a project-wide license. Dataset access terms remain applicable.
+
