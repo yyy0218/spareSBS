@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "support-before-supervision"
+version = "0.2.0"
+description = "SparseSBS: Directional Encoding and training-only Anchor Relay Learning for sparse point-cloud segmentation"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["torch==2.10.0", "numpy==2.4.4", "scipy==1.17.1", "PyYAML==6.0.3", "tqdm==4.68.1", "plyfile==1.1.4", "ninja==1.13.0"]
+
+[tool.setuptools]
+license-files = ["NOTICE"]
+
+[tool.setuptools.packages.find]
+include = ["sbs*"]
+
+[tool.setuptools.package-data]
+"sbs.ops" = ["native_src/*.cu", "native_src/*.cpp", "native_src/*.h", "native_src/*.hpp"]
+"sbs.data.datasets" = ["*.txt"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["F"]

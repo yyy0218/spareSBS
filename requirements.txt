@@ -1,0 +1,2 @@
+# Install CUDA PyTorch as shown in README, then install this project.
+-e .
